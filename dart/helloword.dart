@@ -3,4 +3,6 @@ void main (){
   print("suwannaprom");
   print("My nick name is : fat");
   print("20 year");
+  print("call out ");
+  print("kkk");
 }
