@@ -7,7 +7,6 @@ void main() {
 void callweb(String web,{String protocal = "HTTP",String port = "80"}) => print("$web $protocal $port ");
 
   
-
 //NO.1
 String callGen(int year ){
   print(year);
