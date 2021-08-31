@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:witti02/config/constant.dart';
+import 'package:witti02/screen/login.dart';
 
 class Index extends StatelessWidget {
   @override
@@ -35,26 +37,28 @@ class Index extends StatelessWidget {
                 textStyle: TextStyle(
                   fontSize: 20,
                 ),
-                primary: Colors.amber[900],
+                primary: pColor,
                 padding: EdgeInsets.all(20.0),
                 shape: StadiumBorder()),
             child: Text('LOGIN'),
             onPressed: () {
-              print("LOGIN!!");
+              print("ซัวซะเดย");
+              Navigator.pushNamed(context,'login');
             },
           ),
           SizedBox(height: size.height * 0.05),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
                 textStyle: TextStyle(
-                  fontSize: 20,
+                  fontSize: sFont,
                 ),
-                primary: Colors.amber[900],
+                primary: sColor,
                 padding: EdgeInsets.all(20.0),
                 shape: StadiumBorder()),
-            child: Text('Sign up'),
+            child: Text('Sign Up'),
             onPressed: () {
-              print("Sign up'");
+              print("อยากเป็นสมาชิกอย่างงั้นหรอ!'");
+              Navigator.pushNamed(context,'register');
             },
           ),
         ],
