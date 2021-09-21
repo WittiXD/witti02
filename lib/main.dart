@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:witti02/config/constant.dart';
+import 'package:witti02/screen/dashboard.dart';
 import 'package:witti02/screen/homepage.dart';
 import 'package:witti02/index.dart';
 import 'package:witti02/screen/login.dart';
@@ -22,6 +23,7 @@ class Myapp extends StatelessWidget {
       routes: {
         'login' : (context) => Login(),
         'register':(context) => Register(),
+        'dashboard':(context) => Dashboard(),
       },
       home: Index(),
     );
